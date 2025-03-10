@@ -13,7 +13,7 @@ server.get('*', (req, res) => {
       handle: async (data) => {
         await sleep(0)
         data.content = '第一个标题，第一个描述'
-        data.image = 'https://sponsors.vuejs.org/images/nuxt.avif'
+        data.image = 'https://images.xxapi.cn/images/head/5685183276.jpg'
         return data
       },
       template: fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf-8'), // 服务端渲染数据
